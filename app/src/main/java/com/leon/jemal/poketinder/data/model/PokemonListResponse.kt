@@ -1,4 +1,4 @@
-package com.leon.jemal.poketinder
+package com.leon.jemal.poketinder.data.model
 
 //mapeas tu respuesta json a objeto o serializer
 data class PokemonListResponse(

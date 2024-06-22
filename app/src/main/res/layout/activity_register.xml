@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".ui.view.RegisterActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -88,30 +88,31 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <Button
+        android:id="@+id/bottoncuenta"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/background_rounded_edit_text"
+    android:text="@string/ya_tengo_una_cuenta"
+    android:textAllCaps="false"
+    android:onClick="loginUser"
+    android:textColor="@android:color/holo_blue_dark"
+    app:backgroundTint="#f0f0f0"
+    android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/background_rounded_edit_text"
-        android:text="Registrar"
+        android:text="@string/registrar"
         android:textAllCaps="false"
         android:onClick="registerUser"
         android:textColor="@android:color/holo_red_dark"
         app:backgroundTint="#f0f0f0"
         android:layout_margin="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/background_rounded_edit_text"
-        android:text="Ya tengo una cuenta"
-        android:textAllCaps="false"
-        android:onClick="loginUser"
-        android:textColor="@android:color/holo_blue_dark"
-        app:backgroundTint="#f0f0f0"
-        android:layout_margin="16dp"
-        app:layout_constraintBottom_toTopOf="@id/btnRegister"/>
+        app:layout_constraintBottom_toTopOf="@id/bottoncuenta"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

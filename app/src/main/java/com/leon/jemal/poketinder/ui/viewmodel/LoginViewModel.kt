@@ -1,15 +1,15 @@
-package com.leon.jemal.poketinder
+package com.leon.jemal.poketinder.ui.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.leon.jemal.poketinder.data.database.SharedPreferencesRepository
 
 // El ViewModel para gestionar la lógica de autenticación del usuario
 class LoginViewModel(
     // Contexto de la aplicación o actividad
     val context: Context
 ) : ViewModel() {
-
     // Instancia de SharedPreferencesRepository para manejar SharedPreferences
     private val sharedPreferencesRepository = SharedPreferencesRepository().also {
         // Inicializa SharedPreferences con el contexto proporcionado

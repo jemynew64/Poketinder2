@@ -1,9 +1,10 @@
-package com.leon.jemal.poketinder
+package com.leon.jemal.poketinder.ui.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.leon.jemal.poketinder.ui.viewmodel.LoginViewModel
 import com.leon.jemal.poketinder.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -18,7 +19,6 @@ class LoginActivity : AppCompatActivity() {
         loginViewModel = LoginViewModel(this)
         observeValues()
     }
-
     private fun observeValues() {
         loginViewModel.inputsError.observe(this) {
             Toast.makeText(this, "Ingrese los datos completos", Toast.LENGTH_SHORT).show()

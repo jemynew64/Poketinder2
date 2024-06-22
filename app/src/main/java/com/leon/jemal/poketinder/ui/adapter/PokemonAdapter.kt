@@ -1,10 +1,11 @@
-package com.leon.jemal.poketinder
+package com.leon.jemal.poketinder.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.leon.jemal.poketinder.data.model.PokemonResponse
 import com.leon.jemal.poketinder.databinding.ItemPokemonBinding
 
 //para instarcialo siempre le tengo que pasar un array list
@@ -30,20 +31,16 @@ class PokemonAdapter(
     //implementando 3 metodos clave si o si me dice
 
     //configuro la vista reutilizable se invoka 1 vez
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PokemonAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = ItemPokemonBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(view.root)
     }
 
     // aca recorro o invoco x veces basicamente un for each del arraylist /la veces que sea tu arraylist
-    override fun onBindViewHolder(holder: PokemonAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val itemPokemon = list[position]
         holder.bind(itemPokemon)
     }
     //1 vez para obtener lo largo de tu lista
     override fun getItemCount(): Int = list.size
-
-
-
-
 }

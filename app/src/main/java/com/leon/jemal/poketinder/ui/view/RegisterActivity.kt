@@ -1,9 +1,10 @@
-package com.leon.jemal.poketinder
+package com.leon.jemal.poketinder.ui.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.leon.jemal.poketinder.ui.viewmodel.RegisterViewModel
 
 import com.leon.jemal.poketinder.databinding.ActivityRegisterBinding
 

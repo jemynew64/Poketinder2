@@ -1,9 +1,10 @@
-package com.leon.jemal.poketinder
+package com.leon.jemal.poketinder.ui.viewmodel
 
 import android.content.Context
 import android.util.Patterns
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.leon.jemal.poketinder.data.database.SharedPreferencesRepository
 
 class RegisterViewModel (
     val context: Context

@@ -1,4 +1,4 @@
-package com.leon.jemal.poketinder
+package com.leon.jemal.poketinder.data.database
 
 import android.content.Context
 import android.content.SharedPreferences

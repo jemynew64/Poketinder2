@@ -1,4 +1,4 @@
-package com.leon.jemal.poketinder
+package com.leon.jemal.poketinder.ui.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -17,7 +17,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.imvLogo.animationXAttention(Attention.ATTENTION_SHAKE)
+        binding.imvLogo.animationXAttention(Attention.ATTENTION_SWING)
         runPostDelayed()
     }
 
